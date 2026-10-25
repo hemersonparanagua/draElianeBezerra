@@ -430,7 +430,8 @@ body{margin:0!important;padding:0!important;background:#FAF5EE!important;-webkit
       var open = mm.className.indexOf('open') > -1;
       mm.className = open ? 'mm' : 'mm open';
       bg.className = open ? 'burger' : 'burger on';
-      bg.setAttribute('aria-label', open ? 'Abrir menu' : 'Fechar menu');\n      bg.setAttribute('aria-expanded', open ? 'false' : 'true');
+      bg.setAttribute('aria-label', open ? 'Abrir menu' : 'Fechar menu');
+      bg.setAttribute('aria-expanded', open ? 'false' : 'true');
       document.body.style.overflow = open ? '' : 'hidden';
     };
     var ml = mm.getElementsByTagName('a');

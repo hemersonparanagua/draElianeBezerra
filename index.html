@@ -408,7 +408,7 @@ body{margin:0!important;padding:0!important;background:#FAF5EE!important;-webkit
 (function(){
   var CFG = {
     INSTAGRAM: 'neuropsi_eliane',
-    EMAIL: 'COLE_AQUI_EMAIL',
+
     DOCTORALIA: 'https://www.doctoralia.com.br/eliane-bezerra/psicologo/gravata2?saasonly=true',
     DOCTORALIA_REVIEWS: 'https://www.doctoralia.com.br/eliane-bezerra/psicologo/gravata2?saasonly=true#reviews'
   };
@@ -417,11 +417,10 @@ body{margin:0!important;padding:0!important;background:#FAF5EE!important;-webkit
   each('#hp-home [data-doc]', function(a){ ext(a, CFG.DOCTORALIA); });
   each('#hp-home [data-doc-review]', function(a){ ext(a, CFG.DOCTORALIA_REVIEWS); });
   each('#hp-home [data-ig]', function(a){ ext(a, 'https://www.instagram.com/' + CFG.INSTAGRAM + '/'); });
-  each('#hp-home [data-mail]', function(a){ a.href = 'mailto:' + CFG.EMAIL; });
+
   each('#hp-home [data-txt]', function(a){
     var t = a.getAttribute('data-txt');
-    if (t === 'mail') { a.textContent = CFG.EMAIL; }
-    else { a.textContent = '@' + CFG.INSTAGRAM; }
+    a.textContent = '@' + CFG.INSTAGRAM;
   });
   var nav = document.getElementById('h-nav');
   var mm = document.getElementById('h-mm');

@@ -63,7 +63,8 @@ body{margin:0!important;padding:0!important;background:#FAF5EE!important;-webkit
 #hp-home .btn:hover::after{left:140%}
 #hp-home .btn-o{background:transparent;color:var(--ink);border-color:rgba(43,34,32,.35);box-shadow:none}
 #hp-home .btn-o:hover{background:var(--ink);color:#fff;border-color:var(--ink);box-shadow:none}
-#hp-home .rv{opacity:0;transform:translateY(30px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1)}
+#hp-home .rv{opacity:1;transform:none;transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1)}
+#hp-home.motion-ready .rv:not(.in){opacity:0;transform:translateY(30px)}
 #hp-home .rv.in{opacity:1;transform:none}
 #hp-home .d1{transition-delay:.12s}
 #hp-home .d2{transition-delay:.24s}
@@ -111,7 +112,8 @@ body{margin:0!important;padding:0!important;background:#FAF5EE!important;-webkit
 #hp-home .abg{display:grid;grid-template-columns:5fr 6fr;gap:clamp(36px,6vw,84px);align-items:stretch}
 #hp-home .abt{order:1}
 #hp-home .abp{order:2;position:relative}
-#hp-home .abp img{width:100%;height:100%;min-height:420px;object-fit:cover;object-position:center 12%;border-radius:4px;clip-path:inset(0 0 100% 0);transition:clip-path 1.3s cubic-bezier(.16,1,.3,1) .1s}
+#hp-home .abp img{width:100%;height:100%;min-height:420px;object-fit:cover;object-position:center 12%;border-radius:4px;transition:clip-path 1.3s cubic-bezier(.16,1,.3,1) .1s}
+#hp-home.motion-ready .abp:not(.in) img{clip-path:inset(0 0 100% 0)}
 #hp-home .abp.in img{clip-path:inset(0 0 0 0)}
 #hp-home .abp::before{content:'';position:absolute;top:-12px;left:-12px;right:12px;bottom:12px;border:1px solid var(--terra);opacity:.35;border-radius:4px}
 #hp-home .abt p{color:var(--muted);margin-bottom:16px;max-width:56ch}
@@ -446,6 +448,7 @@ body{margin:0!important;padding:0!important;background:#FAF5EE!important;-webkit
   }
   var els = document.querySelectorAll('#hp-home .rv');
   if ('IntersectionObserver' in window) {
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) { document.getElementById('hp-home').className += ' motion-ready'; }
     var ob = new IntersectionObserver(function(es){
       for (var k = 0; k < es.length; k++) {
         if (es[k].isIntersecting) { es[k].target.className += ' in'; ob.unobserve(es[k].target); }

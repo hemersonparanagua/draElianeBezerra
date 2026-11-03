@@ -112,10 +112,7 @@ body{margin:0!important;padding:0!important;background:#FAF5EE!important;-webkit
 #hp-home .abg{display:grid;grid-template-columns:5fr 6fr;gap:clamp(36px,6vw,84px);align-items:stretch}
 #hp-home .abt{order:1}
 #hp-home .abp{order:2;position:relative}
-#hp-home .abp.rv{transition:opacity .6s cubic-bezier(.2,.7,.25,1),transform .6s cubic-bezier(.2,.7,.25,1)}
-#hp-home .abp img{width:100%;height:100%;min-height:420px;object-fit:cover;object-position:center 12%;border-radius:4px;transition:clip-path .55s ease-out .02s}
-#hp-home.motion-ready .abp:not(.in) img{clip-path:inset(0 0 100% 0)}
-#hp-home .abp.in img{clip-path:inset(0 0 0 0)}
+#hp-home .abp img{width:100%;height:100%;min-height:420px;object-fit:cover;object-position:center 12%;border-radius:4px;clip-path:none;transition:none}
 #hp-home .abp::before{content:'';position:absolute;top:-12px;left:-12px;right:12px;bottom:12px;border:1px solid var(--terra);opacity:.35;border-radius:4px}
 #hp-home .abt p{color:var(--muted);margin-bottom:16px;max-width:56ch}
 #hp-home .trj{order:3;grid-column:1 / -1;border-top:1px solid var(--line);padding-top:36px;margin-top:8px}
@@ -328,7 +325,7 @@ body{margin:0!important;padding:0!important;background:#FAF5EE!important;-webkit
 
 <section class='sec ab' id='h-sobre'>
   <div class='wrap abg'>
-    <div class='abp rv'><img alt='Dra. Eliane Bezerra, psicóloga e neuropsicóloga em Recife' loading='lazy' decoding='async' src='https://lh3.googleusercontent.com/d/1OHXNsts7KM33JqfX7PqPNzT7zoq8gTai=w800'/></div>
+    <div class='abp'><img alt='Dra. Eliane Bezerra, psicóloga e neuropsicóloga em Recife' loading='eager' fetchpriority='low' decoding='async' src='https://lh3.googleusercontent.com/d/1OHXNsts7KM33JqfX7PqPNzT7zoq8gTai=w700'/></div>
     <div class='abt rv d1'>
       <span class='kick'>Quem sou eu</span>
       <h2>Escuta clínica, ciência e <em>formação</em></h2>

@@ -330,7 +330,7 @@ html{scroll-behavior:smooth}
 #hp-curso .abg>.abp{grid-area:portrait;width:100%;max-width:430px;justify-self:end}
 #hp-curso .abg>.rv.d1{grid-area:copy}
 #hp-curso .abp img.m{aspect-ratio:3/4;object-fit:cover;object-position:center top}
-#hp-curso #c-metodo .ck li{opacity:0;transform:translateX(-14px);transition:opacity .65s ease,transform .65s cubic-bezier(.16,1,.3,1)}
+#hp-curso #c-metodo .ck li{opacity:0;transform:translateX(-18px);transition:opacity .65s ease,transform .65s cubic-bezier(.16,1,.3,1)}
 #hp-curso #c-metodo .rv.in .ck li{opacity:1;transform:none}
 #hp-curso #c-metodo .rv.in .ck li:nth-child(2){transition-delay:.12s}
 #hp-curso #c-metodo .rv.in .ck li:nth-child(3){transition-delay:.24s}
@@ -374,25 +374,25 @@ html{scroll-behavior:smooth}
 #hp-curso .catalog-btn[href]:hover{background:#803d2d;transform:translateY(-1px)}
 #hp-curso .catalog-btn.is-soon{background:#e9e7df;color:#6d7065;cursor:default}
 #hp-curso .combo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:clamp(38px,6vw,70px)}
-#hp-curso .combo-panel{display:grid;grid-template-columns:minmax(130px,.8fr) minmax(0,1.2fr);gap:12px;align-items:center;padding:clamp(20px,3vw,34px);border-radius:22px;background:#e9ede5;border:1px solid rgba(54,63,51,.12);text-align:center}
-#hp-curso .combo-art{position:relative;display:grid;place-items:center;min-height:245px;overflow:hidden}
-#hp-curso .combo-cover{grid-area:1/1;width:47%;aspect-ratio:450/640;box-shadow:7px 10px 18px rgba(44,39,30,.17);border:1px solid rgba(30,30,30,.08);background:#f5f1e8}
+#hp-curso .combo-panel{display:grid;grid-template-columns:minmax(170px,1.1fr) minmax(0,.9fr);gap:12px;align-items:center;padding:clamp(20px,3vw,34px);border-radius:22px;background:#e9ede5;border:1px solid rgba(54,63,51,.12);text-align:center}
+#hp-curso .combo-art{position:relative;display:grid;place-items:center;min-height:270px;overflow:hidden}
+#hp-curso .combo-cover{grid-area:1/1;width:57%;aspect-ratio:450/640;box-shadow:7px 10px 18px rgba(44,39,30,.17);border:1px solid rgba(30,30,30,.08);background:#f5f1e8}
 #hp-curso .combo-cover img{width:100%;height:100%;object-fit:cover;display:block}
-#hp-curso .combo-art[data-count="2"] .combo-cover{width:59%}
+#hp-curso .combo-art[data-count="2"] .combo-cover{width:66%}
 #hp-curso .combo-art[data-count="2"] .combo-cover:nth-child(1){transform:rotate(-7deg) translateX(-25px)}
 #hp-curso .combo-art[data-count="2"] .combo-cover:nth-child(2){transform:rotate(7deg) translateX(25px)}
-#hp-curso .combo-art[data-count="4"] .combo-cover:nth-child(1){transform:rotate(-10deg) translateX(-43px)}
+#hp-curso .combo-art[data-count="4"] .combo-cover:nth-child(1){transform:rotate(-10deg) translateX(-54px)}
 #hp-curso .combo-art[data-count="4"] .combo-cover:nth-child(2){transform:rotate(-4deg) translateX(-14px)}
-#hp-curso .combo-art[data-count="4"] .combo-cover:nth-child(3){transform:rotate(4deg) translateX(14px)}
-#hp-curso .combo-art[data-count="4"] .combo-cover:nth-child(4){transform:rotate(10deg) translateX(43px)}
+#hp-curso .combo-art[data-count="4"] .combo-cover:nth-child(3){transform:rotate(4deg) translateX(18px)}
+#hp-curso .combo-art[data-count="4"] .combo-cover:nth-child(4){transform:rotate(10deg) translateX(54px)}
 #hp-curso .combo-copy{display:flex;flex-direction:column;align-items:center}
 #hp-curso .combo-copy h3{font-family:var(--serif);font-size:clamp(25px,3vw,34px);font-weight:500;line-height:1.1;margin:4px 0 12px}
 #hp-curso .combo-copy p{font-size:13px;max-width:38ch;color:var(--muted);line-height:1.5;margin:0 0 10px}
 #hp-curso .combo-confirm{padding-top:9px;border-top:1px solid rgba(54,63,51,.14);font-size:11px!important}
 #hp-curso .catalog-disclaimer{max-width:75ch;margin:24px auto 0;text-align:center;font-size:12px;line-height:1.55;color:var(--muted)}
 @media(max-width:1050px){#hp-curso .catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}#hp-curso .product-visual{min-height:320px}#hp-curso .product-book{width:min(100%,205px)}}
-@media(max-width:760px){#hp-curso .catalog-head{margin-bottom:30px}#hp-curso .catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}#hp-curso .product-visual{min-height:245px;padding:19px 13px}#hp-curso .product-book{width:min(100%,155px)}#hp-curso .product-copy{padding:17px 13px 15px}#hp-curso .product-copy h3{font-size:20px}#hp-curso .product-copy p{font-size:12px}#hp-curso .catalog-btn{font-size:12px;padding:10px 8px}#hp-curso .combo-grid{grid-template-columns:1fr;gap:14px;margin-top:35px}#hp-curso .combo-panel{grid-template-columns:minmax(125px,.8fr) minmax(0,1.2fr);padding:20px 18px}#hp-curso .combo-art{min-height:220px}#hp-curso .combo-copy h3{font-size:28px}}
-@media(max-width:480px){#hp-curso .catalog-grid{grid-template-columns:1fr;gap:13px}#hp-curso .product-card{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)}#hp-curso .product-visual{min-height:230px;padding:18px 11px}#hp-curso .product-book{width:min(100%,145px)}#hp-curso .product-copy{padding:15px 12px;justify-content:center}#hp-curso .product-copy h3{font-size:19px}#hp-curso .product-copy p{font-size:12px}#hp-curso .combo-panel{grid-template-columns:1fr;gap:9px;padding:21px 18px}#hp-curso .combo-art{min-height:205px}#hp-curso .combo-copy h3{font-size:28px}#hp-curso .combo-copy .catalog-btn{max-width:290px}}
+@media(max-width:760px){#hp-curso .catalog-head{margin-bottom:30px}#hp-curso .catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}#hp-curso .product-visual{min-height:245px;padding:19px 13px}#hp-curso .product-book{width:min(100%,155px)}#hp-curso .product-copy{padding:17px 13px 15px}#hp-curso .product-copy h3{font-size:20px}#hp-curso .product-copy p{font-size:12px}#hp-curso .catalog-btn{font-size:12px;padding:10px 8px}#hp-curso .combo-grid{grid-template-columns:1fr;gap:14px;margin-top:35px}#hp-curso .combo-panel{grid-template-columns:minmax(125px,.8fr) minmax(0,1.2fr);padding:20px 18px}#hp-curso .combo-art{min-height:265px}#hp-curso .combo-copy h3{font-size:28px}}
+@media(max-width:480px){#hp-curso .combo-art[data-count="2"]{min-height:280px}#hp-curso .catalog-grid{grid-template-columns:1fr;gap:13px}#hp-curso .product-card{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)}#hp-curso .product-visual{min-height:230px;padding:18px 11px}#hp-curso .product-book{width:min(100%,145px)}#hp-curso .product-copy{padding:15px 12px;justify-content:center}#hp-curso .product-copy h3{font-size:19px}#hp-curso .product-copy p{font-size:12px}#hp-curso .combo-panel{grid-template-columns:1fr;gap:9px;padding:21px 18px}#hp-curso .combo-art{min-height:255px}#hp-curso .combo-copy h3{font-size:28px}#hp-curso .combo-copy .catalog-btn{max-width:290px}}
 @media(prefers-reduced-motion:reduce){#hp-curso .product-card,#hp-curso .product-book,#hp-curso .catalog-btn{transition:none!important}#hp-curso .product-card:hover,#hp-curso .product-card:hover .product-book{transform:none}}
 </style></head><body><div id="hp-curso"><a id="c-skip" href="#c-main">Pular para o conteúdo</a>
 <nav class="nav" id="c-nav" aria-label="Navegação principal"><a class="brand" href="/">Dra<b>.</b> Eliane Bezerra</a><div class="nl" id="c-nl"><a href="#c-cursos">Caderno CRIVO®</a><a href="#c-sobre">Sobre</a><a class="nb siteback" href="/">Voltar ao site</a></div><button aria-label="Abrir menu" aria-expanded="false" aria-controls="c-nl" class="burger" id="c-burger" type="button"><span></span><span></span><span></span></button></nav>
